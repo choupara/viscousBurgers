@@ -180,3 +180,10 @@ python -m pytest tests/ -v
 - CFL stability constraint enforcement
 - Solver integration (finite solution, scheme switching, correction hook)
 - Error metric correctness
+
+## AI Assistance Declaration
+
+Portions of the code in this repository were developed with the assistance of the **Cloud Opus** large language model.  
+The model was used as a coding aid for generating boilerplate code, refactoring, and improving code clarity.  
+All design decisions, validation, testing, and final integration were performed by the authors.
+``
