@@ -1,0 +1,33 @@
+model:
+  type: "mlp"
+  mlp:
+    input_dim: 11
+    hidden_dims: [64, 64, 32]
+    activation: "relu"
+    dropout: 0.0
+  cnn:
+    in_channels: 1
+    hidden_channels: [16, 32, 16]
+    kernel_size: 5
+    activation: "relu"
+
+training:
+  epochs: 100
+  batch_size: 256
+  lr: 1.0e-3
+  weight_decay: 1.0e-5
+  scheduler: "cosine"
+  val_fraction: 0.15
+  patience: 15
+
+loss:
+  mse_weight: 1.0
+  smoothness_weight: 0.01
+
+eval:
+  rollout_steps: [10, 50, 100]
+  save_dir: "outputs/eval"
+
+io:
+  checkpoint_dir: "outputs/checkpoints"
+  log_dir: "outputs/logs"

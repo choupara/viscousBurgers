@@ -1,0 +1,8 @@
+n_samples: 500
+ic_families: ["sine_sum", "gaussian_bump", "riemann"]
+ic_seeds: [0, 1, 2, 3, 4]
+nu_range: [0.005, 0.05]
+refinement_ratio: 4
+stencil_half_width: 3
+output_dir: "data/generated"
+n_snapshots_per_sim: 20
